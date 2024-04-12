@@ -21,14 +21,6 @@
         packages = with pkgs; [
           python3
         ];
-
-        shellHook = ''
-        if [ ! -d "$PWD/.venv" ]; then
-          ${pkgs.python3}/bin/python3 -m venv .venv
-        fi
-
-        . .venv/bin/activate
-        '';
       };
     });
   };
