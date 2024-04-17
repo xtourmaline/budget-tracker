@@ -19,11 +19,11 @@
     devShells = eachSystem (pkgs: {
       default = pkgs.mkShell {
         packages = with pkgs; [
-          (python3.withPackages (pip: [
-            pip.mysqlclient
-            pip.python-dotenv
-            pip.sqlalchemy
-          ]))
+          python3
+
+          # For mysqlclient (TODO: pls fix this)
+          libmysqlclient
+          pkg-config
         ];
       };
     });

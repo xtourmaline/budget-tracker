@@ -1,0 +1,5 @@
+greenlet==3.0.3
+mysqlclient==2.2.4
+python-dotenv==1.0.1
+SQLAlchemy==2.0.29
+typing_extensions==4.11.0
